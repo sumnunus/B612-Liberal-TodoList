@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="clock" class="location">00:00</h2>
+    <form class="hidden location" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 class="hidden location" id="greeting"></h1>
+    <form id="todo-form" class="location">
+      <input type="text" placeholder="Write a To Do and Press Enter" required/>
+    </form>
+    <ul id="todo-list" class="inside location"></ul>
+    <div id="quote" class="location">
+      <span></span>
+      <p><span></span></p>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    </body>
+    </html> 
